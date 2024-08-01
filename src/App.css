@@ -1,0 +1,153 @@
+
+body {
+  width:100%;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+header {
+  background-color: black;
+  color:bisque;
+  text-align: center;
+  padding: 25px;
+}
+.box{
+  text-align: center;
+  background-color: #f0f0f0; /* Optional: Box background color */
+  border-radius: 10px;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  min-height: 410px;
+  max-height: auto;
+ 
+}
+form {
+    border: 2px solid green;
+      background-image: radial-gradient(#F7B5CA,#B5CFB7,#FFEBD4);
+ margin-top: -40px;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  width: 40%;
+  min-height: auto;
+  max-height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+form:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Animation for input fields */
+input {
+  animation: inputShake 0.3s ease-in-out;
+}
+
+@keyframes inputShake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px); }
+  20% { transform: translateX(5px); }
+  30% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  70% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  90% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width:50%;
+  
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  padding: 10px;
+  background-color: #F7B5CA;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ExpenseList.css */
+.li{
+  padding: 50px;
+  align-items: center;
+  background-color: gainsboro;
+  min-height: 50px;
+  max-height: auto;
+  
+
+}
+
+table {
+  border-collapse: collapse; /* Remove default border spacing */
+  
+  background-color: #f5f5f5; /* Light gray background */
+   align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto; /* Center the table */
+  
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+
+
+}
+
+thead,
+td {
+  padding: 10px; /* Padding for cells */
+ /* Align text to the left */
+  text-align: center;
+  justify-content: center;
+  
+}
+
+thead  td{
+  background-color: #4caf50; /* Light gray header background */  
+}
+
+tbody tr:nth-child(even) { /* Even rows */
+  background-color: #fff; /* White background */
+}
+
+tbody tr:hover { /* Hover effect for all rows */
+  background-color: #e0e0e0; /* Light gray on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  
+}
+td{
+  border: 2px solid black;
+  
+}
+
+ 
+
